@@ -6,7 +6,7 @@
   <link href="https://jamiejusttang.github.io/atom.xml" rel="self"/>
   
   <link href="https://jamiejusttang.github.io/"/>
-  <updated>2021-09-15T10:19:12.015Z</updated>
+  <updated>2021-09-15T11:43:08.819Z</updated>
   <id>https://jamiejusttang.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>leetcode刷题笔记-整数反转</title>
-    <link href="https://jamiejusttang.github.io/2021/09/15/leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0-%E6%95%B4%E6%95%B0%E5%8F%8D%E8%BD%AC/"/>
-    <id>https://jamiejusttang.github.io/2021/09/15/leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0-%E6%95%B4%E6%95%B0%E5%8F%8D%E8%BD%AC/</id>
-    <published>2021-09-15T09:43:52.503Z</published>
-    <updated>2021-09-15T10:19:12.015Z</updated>
+    <link href="https://jamiejusttang.github.io/2021/08/15/leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0-%E6%95%B4%E6%95%B0%E5%8F%8D%E8%BD%AC/"/>
+    <id>https://jamiejusttang.github.io/2021/08/15/leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0-%E6%95%B4%E6%95%B0%E5%8F%8D%E8%BD%AC/</id>
+    <published>2021-08-14T16:00:00.000Z</published>
+    <updated>2021-09-15T11:43:08.819Z</updated>
     
     <content type="html"><![CDATA[<span id="more"></span><pre><code class="python">class Solution:    def reverse(self, x: int) -&gt; int:        rev =int(str(x)[::-1] if x&gt;=0 else ("-"+str(x)[:0:-1]))        if len("{0:b}".format(rev if rev&gt;=0 else -rev))&gt;=32:            return 0        return rev</code></pre><ul><li>1032/1032 cases passed (32 ms)</li><li>Your runtime beats 88.55 % of python3 submissions</li><li>Your memory usage beats 89.92 % of python3 submissions (14.7 MB)</li></ul>]]></content>
     
@@ -43,11 +43,37 @@
   </entry>
   
   <entry>
+    <title>leetcode刷题笔记-最长公共后缀</title>
+    <link href="https://jamiejusttang.github.io/2021/08/15/leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0-%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%90%8E%E7%BC%80/"/>
+    <id>https://jamiejusttang.github.io/2021/08/15/leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0-%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%90%8E%E7%BC%80/</id>
+    <published>2021-08-14T16:00:00.000Z</published>
+    <updated>2021-09-15T11:43:19.994Z</updated>
+    
+    <content type="html"><![CDATA[<span id="more"></span><pre><code class="python">class Solution:    def longestCommonPrefix(self, strs: List[str]) -&gt; str:        if len(strs)==1:            return strs[0]        for l in range(len(strs[0])):            #for str in strs[1:]:            for string in strs:                try:                    if strs[0][l]!=string[l]:                        return strs[0][:l]                except:                    return strs[0][:l]        return strs[0]</code></pre><h2 id="Accepted"><a href="#Accepted" class="headerlink" title="Accepted"></a>Accepted</h2><ul><li>123/123 cases passed (32 ms)</li><li>Your runtime beats 87.95 % of python3 submissions</li><li>Your memory usage beats 54.01 % of python3 submissions (15 MB)</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
+
+&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;class Solution:
+    def longestCommonPrefix(self, strs: List[str]) -&amp;gt; str:
+        if </summary>
+      
+    
+    
+    
+    
+    <category term="leetcode" scheme="https://jamiejusttang.github.io/tags/leetcode/"/>
+    
+  </entry>
+  
+  <entry>
     <title>leetcode刷题笔记-罗马数字转整数</title>
-    <link href="https://jamiejusttang.github.io/2021/09/15/leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0-%E7%BD%97%E9%A9%AC%E6%95%B0%E5%AD%97%E8%BD%AC%E6%95%B4%E6%95%B0/"/>
-    <id>https://jamiejusttang.github.io/2021/09/15/leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0-%E7%BD%97%E9%A9%AC%E6%95%B0%E5%AD%97%E8%BD%AC%E6%95%B4%E6%95%B0/</id>
-    <published>2021-09-15T09:43:52.501Z</published>
-    <updated>2021-09-15T10:19:04.129Z</updated>
+    <link href="https://jamiejusttang.github.io/2021/08/03/leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0-%E7%BD%97%E9%A9%AC%E6%95%B0%E5%AD%97%E8%BD%AC%E6%95%B4%E6%95%B0/"/>
+    <id>https://jamiejusttang.github.io/2021/08/03/leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0-%E7%BD%97%E9%A9%AC%E6%95%B0%E5%AD%97%E8%BD%AC%E6%95%B4%E6%95%B0/</id>
+    <published>2021-08-02T16:00:00.000Z</published>
+    <updated>2021-09-15T11:42:53.681Z</updated>
     
     <content type="html"><![CDATA[<span id="more"></span><pre><code class="python">class Solution:    def romanToInt(self, s: str) -&gt; int:        num=0        sdict={'I':1,'V':5,'X':10,'L':50,'C':100,'D':500,'M':1000}        bydict={'IV':4,'IX':9,'XL':40,'XC':90,'CD':400,'CM':900}        i=0        while i &lt; len(s)-1 :            try:                num+=bydict[s[i]+s[i+1]]                i+=2                #print(i,num)            except KeyError:                num+=sdict[s[i]]                #print(i,num)                # if i==len(s)-2:                #     num+=sdict[s[i+1]]                    #print(i+1,num)                i+=1            finally:                continue        if i==len(s)-1:            num+=sdict[s[i]]        return num  </code></pre><h2 id="Accepted"><a href="#Accepted" class="headerlink" title="Accepted"></a>Accepted</h2><ul><li>3999/3999 cases passed (56 ms)</li><li>Your runtime beats 54.79 % of python3 submissions</li><li>Your memory usage beats 65.11 % of python3 submissions (14.9 MB)</li></ul><hr><p><strong>然后试着做减法……</strong></p><pre><code class="python">class Solution:    def romanToInt(self, s: str) -&gt; int:        num=0        sdict={'I':1,'V':5,'X':10,'L':50,'C':100,'D':500,'M':1000}        bydict={'IV':-2,'IX':-2,'XL':-20,'XC':-20,'CD':-200,'CM':-200}        for i in s:            num+=sdict[i]            #print(i,num)        i=0        while i &lt; len(s)-1 :            try:                num+=bydict[s[i]+s[i+1]]                i+=2                #print(i,num)            except:                i+=1            finally:                continue        return num  </code></pre><h2 id="Accepted-1"><a href="#Accepted-1" class="headerlink" title="Accepted"></a>Accepted</h2><ul><li>3999/3999 cases passed (40 ms)</li><li>Your runtime beats 95.81 % of python3 submissions</li><li>Your memory usage beats 5.3 % of python3 submissions (15.2 MB)</li></ul><p><strong>减法大大加快了速度，但是占用了更多的空间</strong></p><p>是因为循环两次的原因吗？</p><hr><p><strong>修改了关于exception的报错，发现结果有了一定的平衡</strong></p><pre><code class="python">except KeyError:    i+=1</code></pre><h2 id="Accepted-2"><a href="#Accepted-2" class="headerlink" title="Accepted"></a>Accepted</h2><ul><li>3999/3999 cases passed (52 ms)</li><li>Your runtime beats 69 % of python3 submissions</li><li>Your memory usage beats 29.39 % of python3 submissions (15 MB)</li></ul><p>明确报错类型，降低了内存使用量，但是拉低了速度</p><hr><p>的确如此……</p><p>如果我把方法一的exception不指定，运行速度就会大大增加，然而占用空间也增加了。</p><h2 id="Accepted-3"><a href="#Accepted-3" class="headerlink" title="Accepted"></a>Accepted</h2><ul><li>3999/3999 cases passed (44 ms)</li><li>Your runtime beats 90.25 % of python3 submissions</li><li>Your memory usage beats 14.92 % of python3 submissions (15.1 MB)</li></ul>]]></content>
     
@@ -71,10 +97,10 @@
   
   <entry>
     <title>leetcode刷题笔记-两数之和</title>
-    <link href="https://jamiejusttang.github.io/2021/09/15/leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/"/>
-    <id>https://jamiejusttang.github.io/2021/09/15/leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/</id>
-    <published>2021-09-15T09:43:52.498Z</published>
-    <updated>2021-09-15T10:18:59.104Z</updated>
+    <link href="https://jamiejusttang.github.io/2021/08/02/leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/"/>
+    <id>https://jamiejusttang.github.io/2021/08/02/leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0-%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/</id>
+    <published>2021-08-01T16:00:00.000Z</published>
+    <updated>2021-09-15T11:42:42.357Z</updated>
     
     <content type="html"><![CDATA[<span id="more"></span><h1 id="两数之和-♥"><a href="#两数之和-♥" class="headerlink" title="两数之和 ♥"></a>两数之和 ♥</h1><p><a href="https://leetcode-cn.com/problems/two-sum/description/">https://leetcode-cn.com/problems/two-sum/description/</a></p><p>Tags:   algorithms   adobe   airbnb   amazon   apple   bloomberg   dropbox   facebook   linkedin   microsoft   uber   yahoo   yelp   array   hash-table </p><p>Langs:  c   cpp   csharp   golang   java   javascript   kotlin   php   python   python3   racket   ruby   rust   scala   swift   typescript </p><ul><li>algorithms</li><li>Easy (51.15%)</li><li>Likes:    11104</li><li>Dislikes: -</li><li>Total Accepted:    2.1M</li><li>Total Submissions: 4M</li><li>Testcase Example:  ‘[2,7,11,15]\n9’</li></ul><p>给定一个整数数组 <code>nums</code>&nbsp;和一个整数目标值 <code>target</code>，请你在该数组中找出 <strong>和为目标值</strong> 的那&nbsp;<strong>两个</strong>&nbsp;整数，并返回它们的数组下标。</p><p>你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。</p><p>你可以按任意顺序返回答案。</p><h2 id="我的初步答案"><a href="#我的初步答案" class="headerlink" title="我的初步答案"></a>我的初步答案</h2><pre><code class="python">class Solution:    def twoSum(self, nums: List[int], target: int) -&gt; List[int]:        ans=[]        # for i in range(len(nums)):        #     ans.append(target-nums[i])            for i in range(len(nums)):            for j in range(len(nums)):                if i==j:                    continue                if nums[i]+nums[j]==target:                    return [i,j]</code></pre><h2 id="Accepted"><a href="#Accepted" class="headerlink" title="Accepted"></a>Accepted</h2><ul><li>54/54 cases passed (7496 ms)</li><li>Your runtime beats 5.01 % of python3 submissions</li><li>Your memory usage beats 65.59 % of python3 submissions (15.1 MB)</li></ul><hr><pre><code class="python">class Solution:    def twoSum(self, nums: List[int], target: int) -&gt; List[int]:        hashlist=[]        for i in range(len(nums)):            for j in range(len(hashlist)):                if target-nums[i]==hashlist[j]:                    return [j,i]            hashlist.append(nums[i])            #print(hashlist)        return None</code></pre><h2 id="Accepted-1"><a href="#Accepted-1" class="headerlink" title="Accepted"></a>Accepted</h2><ul><li>54/54 cases passed (2960 ms)</li><li>Your runtime beats 28.77 % of python3 submissions</li><li>Your memory usage beats 61.16 % of python3 submissions (15.2 MB)</li></ul><p>【然后参照网络的<code>nums.index(num)</code>修改了一下，index好像就是一种哈希索引？】</p><pre><code class="python">    def twoSum(self, nums: List[int], target: int) -&gt; List[int]:        hashlist=[]        for nump in range(len(nums)):            for one in hashlist:                if target-nums[nump]==one:                    return [hashlist.index(one),nump]            hashlist.append(nums[nump])            #print(hashlist)        return None</code></pre><h2 id="Accepted-2"><a href="#Accepted-2" class="headerlink" title="Accepted"></a>Accepted</h2><ul><li>54/54 cases passed (2172 ms)</li><li>Your runtime beats 32.02 % of python3 submissions</li><li>Your memory usage beats 49.39 % of python3 submissions (15.3 MB)</li></ul><p>——果然，使用空间增加了，速度也增加了。</p><hr><pre><code class="python">class Solution:    def twoSum(self, nums: List[int], target: int) -&gt; List[int]:        hashdict={}        for i in range(len(nums)):            try:                #print(hashdict[target-nums[i]],i)                return [hashdict[target-nums[i]],i]            except:                hashdict[nums[i]]=i                #print(hashdict)                continue                  return 'failed'</code></pre><h2 id="Accepted-3"><a href="#Accepted-3" class="headerlink" title="Accepted"></a>Accepted</h2><ul><li>54/54 cases passed (36 ms)</li><li>Your runtime beats 84.72 % of python3 submissions</li><li>Your memory usage beats 8.37 % of python3 submissions (15.9 MB)</li></ul><p>貌似用exception语句的运行效率是挺高的。就是空间占用有点大。</p><p>【参考网络，给出另一种字典模拟哈希表的方式。速度有了提高。】</p><pre><code class="python">class Solution:    def twoSum(self, nums: List[int], target: int) -&gt; List[int]:        hashmap={}        for ind,num in enumerate(nums):            hashmap[num] = ind        for i,num in enumerate(nums):            j = hashmap.get(target - num)            if j is not None and i!=j:                return [i,j]</code></pre><h2 id="Accepted-4"><a href="#Accepted-4" class="headerlink" title="Accepted"></a>Accepted</h2><ul><li>54/54 cases passed (28 ms)</li><li>Your runtime beats 97.73 % of python3 submissions</li><li>Your memory usage beats 14.67 % of python3 submissions (15.9 MB)</li></ul><hr><p>我又试着在上面的基础上，把hash字典的创建挪到里面去。但却发现速度没有提高、反而增加了占用空间。</p><p>很奇怪……？</p><hr><p><strong>尝试使用【num in nums】进行查找 + 【exception语句抛出】</strong></p><pre><code class="python">class Solution:    def twoSum(self, nums: List[int], target: int) -&gt; List[int]:        hashlist=[]        for nump in range(len(nums)):            try:                return [hashlist.index(target-nums[nump]),nump]            except:                hashlist.append(nums[nump])                continue            #print(hashlist)        return None</code></pre><h2 id="Accepted-exception抛出"><a href="#Accepted-exception抛出" class="headerlink" title="Accepted - exception抛出"></a>Accepted - exception抛出</h2><ul><li>54/54 cases passed (312 ms)</li><li>Your runtime beats 43.54 % of python3 submissions</li><li>Your memory usage beats 62.64 % of python3 submissions (15.2 MB)</li></ul><p><em>运算速度有极大提高！！占用空间等于list的使用空间</em></p><p>以下对比了网络答案中的<code>i j</code>标号和if判断抛出，发现<strong>exception的抛出在节省空间上有优势</strong>！</p><h2 id="Accepted-if抛出"><a href="#Accepted-if抛出" class="headerlink" title="Accepted - if抛出"></a>Accepted - if抛出</h2><ul><li>54/54 cases passed (392 ms)</li><li>Your runtime beats 42.17 % of python3 submissions</li><li>Your memory usage beats 47.37 % of python3 submissions (15.4 MB)</li></ul><hr><p>【摘自网络】</p><p>实测三种判断方式各运行100万次用时（win10 python3.7.3）：</p><ol><li><code>key in dict</code> 用时 1.088 秒 </li><li><code>dict.get(key)</code> 用时 1.294 秒 ——查询不到，返回NONE</li><li><code>dict[key]</code> 用时 1.01 秒 ——抛出异常</li></ol><p>显然第一种和第三种都很快，速度相差不大，第二种要比其他写法慢很多；此外，如果要获取index，第一种得二次查询，更加费时。</p><p>总结：</p><ul><li>直观使用：dict.get(key)</li><li>查询键值：dict[key]+exception抛出</li><li>单纯判断键是否存在：key in dict</li></ul>]]></content>
     
@@ -94,10 +120,10 @@
   
   <entry>
     <title>leetcode刷题笔记-回文数</title>
-    <link href="https://jamiejusttang.github.io/2021/09/15/leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0-%E5%9B%9E%E6%96%87%E6%95%B0/"/>
-    <id>https://jamiejusttang.github.io/2021/09/15/leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0-%E5%9B%9E%E6%96%87%E6%95%B0/</id>
-    <published>2021-09-15T09:43:52.495Z</published>
-    <updated>2021-09-15T10:18:52.516Z</updated>
+    <link href="https://jamiejusttang.github.io/2021/08/02/leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0-%E5%9B%9E%E6%96%87%E6%95%B0/"/>
+    <id>https://jamiejusttang.github.io/2021/08/02/leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0-%E5%9B%9E%E6%96%87%E6%95%B0/</id>
+    <published>2021-08-01T16:00:00.000Z</published>
+    <updated>2021-09-15T11:42:28.256Z</updated>
     
     <content type="html"><![CDATA[<span id="more"></span><pre><code class="python">class Solution:    def isPalindrome(self, x: int) -&gt; bool:        return str(x)==str(x)[::-1]</code></pre><h2 id="Accepted"><a href="#Accepted" class="headerlink" title="Accepted"></a>Accepted</h2><ul><li>11510/11510 cases passed (40 ms)</li><li>Your runtime beats 99.68 % of python3 submissions</li><li>Your memory usage beats 16.18 % of python3 submissions (15 MB)</li></ul><p><strong>可见，使用字符串存储会占用较多空间；但节省时间</strong></p><hr><pre><code class="python">class Solution:    def isPalindrome(self, x: int) -&gt; bool:        if x&lt;0:            return False        return str(x)==str(x)[::-1]</code></pre><h2 id="Accepted-1"><a href="#Accepted-1" class="headerlink" title="Accepted"></a>Accepted</h2><ul><li>11510/11510 cases passed (56 ms)</li><li>Your runtime beats 89.01 % of python3 submissions</li><li>Your memory usage beats 47.65 % of python3 submissions (14.9 MB)</li></ul>]]></content>
     
@@ -115,54 +141,6 @@
     
     
     <category term="leetcode" scheme="https://jamiejusttang.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>leetcode刷题笔记-最长公共后缀</title>
-    <link href="https://jamiejusttang.github.io/2021/09/15/leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0-%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%90%8E%E7%BC%80/"/>
-    <id>https://jamiejusttang.github.io/2021/09/15/leetcode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0-%E6%9C%80%E9%95%BF%E5%85%AC%E5%85%B1%E5%90%8E%E7%BC%80/</id>
-    <published>2021-09-15T09:43:52.493Z</published>
-    <updated>2021-09-15T10:24:33.329Z</updated>
-    
-    <content type="html"><![CDATA[<span id="more"></span><pre><code class="python">class Solution:    def longestCommonPrefix(self, strs: List[str]) -&gt; str:        if len(strs)==1:            return strs[0]        for l in range(len(strs[0])):            #for str in strs[1:]:            for string in strs:                try:                    if strs[0][l]!=string[l]:                        return strs[0][:l]                except:                    return strs[0][:l]        return strs[0]</code></pre><h2 id="Accepted"><a href="#Accepted" class="headerlink" title="Accepted"></a>Accepted</h2><ul><li>123/123 cases passed (32 ms)</li><li>Your runtime beats 87.95 % of python3 submissions</li><li>Your memory usage beats 54.01 % of python3 submissions (15 MB)</li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;span id=&quot;more&quot;&gt;&lt;/span&gt;
-
-&lt;pre&gt;&lt;code class=&quot;python&quot;&gt;class Solution:
-    def longestCommonPrefix(self, strs: List[str]) -&amp;gt; str:
-        if </summary>
-      
-    
-    
-    
-    
-    <category term="leetcode" scheme="https://jamiejusttang.github.io/tags/leetcode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一篇测试博客</title>
-    <link href="https://jamiejusttang.github.io/2021/09/15/%E4%B8%80%E7%AF%87%E6%B5%8B%E8%AF%95%E5%8D%9A%E5%AE%A2/"/>
-    <id>https://jamiejusttang.github.io/2021/09/15/%E4%B8%80%E7%AF%87%E6%B5%8B%E8%AF%95%E5%8D%9A%E5%AE%A2/</id>
-    <published>2021-09-15T05:37:47.835Z</published>
-    <updated>2021-09-15T10:21:01.928Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="这是一篇测试博客"><a href="#这是一篇测试博客" class="headerlink" title="这是一篇测试博客"></a>这是一篇测试博客</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><blockquote><p>这是引文</p></blockquote><p>这是正文部分的内容。</p><p><code>std::cout</code></p><pre><code class="javascript">console.log('x')</code></pre>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;这是一篇测试博客&quot;&gt;&lt;a href=&quot;#这是一篇测试博客&quot; class=&quot;headerlink&quot; title=&quot;这是一篇测试博客&quot;&gt;&lt;/a&gt;这是一篇测试博客&lt;/h1&gt;&lt;h2 id=&quot;这是二级标题&quot;&gt;&lt;a href=&quot;#这是二级标题&quot; class=&quot;headerli</summary>
-      
-    
-    
-    
-    
-    <category term="test" scheme="https://jamiejusttang.github.io/tags/test/"/>
     
   </entry>
   
@@ -204,6 +182,51 @@
     <category term="小说" scheme="https://jamiejusttang.github.io/tags/%E5%B0%8F%E8%AF%B4/"/>
     
     <category term="TBC" scheme="https://jamiejusttang.github.io/tags/TBC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020疫情春节留校有感</title>
+    <link href="https://jamiejusttang.github.io/2020/03/28/2020%E7%96%AB%E6%83%85%E6%98%A5%E8%8A%82%E7%95%99%E6%A0%A1%E6%9C%89%E6%84%9F/"/>
+    <id>https://jamiejusttang.github.io/2020/03/28/2020%E7%96%AB%E6%83%85%E6%98%A5%E8%8A%82%E7%95%99%E6%A0%A1%E6%9C%89%E6%84%9F/</id>
+    <published>2020-03-28T11:33:10.000Z</published>
+    <updated>2021-09-15T11:50:27.210Z</updated>
+    
+    <content type="html"><![CDATA[<p>   </p><p><img src="https://i.loli.net/2021/09/15/ak7KIn6zTNUh48L.jpg" alt="夕阳和足球场"></p><p>这是我前所未有的一个假期，从开头到此刻都如同浸在梦中。<br>这春天来得也是一样。当你在梦里闲步于林中小径，十有八九，也是如这般寂寥和繁盛。稀稀拉拉的人影是寂寥，不可远察的行人私语是寂寥，只因一夜错过而再不见其盛放的花儿，残落满地的时候也是寂寥的。</p><span id="more"></span><p>唯独你心里是繁盛的。你曾闭于暴雪疾灾之夜的斗室，也曾遐思真理意义的探寻；你历过兵荒马乱的嘈杂，也点燃了微红的炬火。现在你觉知，已将渡洪流之末，风云欲息，万声允默。<br>——此梦亦将碎去，若坠九天，随星河披落无尽长空。</p><hr><p>   </p><p>这是人大的春天啊，最寂寥也最繁盛。<br>行者渐疏，风日回暖。我说你和：<br>傍晚有最不容错过的生色，<br>你不肯停留，却反滞于奇玄可能。</p><p>   </p><p><img src="https://i.loli.net/2021/09/15/uvi2PBRgfFbM6Ep.jpg" alt="2022年-疫情下的人大校园"></p><p>   </p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;   &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2021/09/15/ak7KIn6zTNUh48L.jpg&quot; alt=&quot;夕阳和足球场&quot;&gt;&lt;/p&gt;
+&lt;p&gt;这是我前所未有的一个假期，从开头到此刻都如同浸在梦中。&lt;br&gt;这春天来得也是一样。当你在梦里闲步于林中小径，十有八九，也是如这般寂寥和繁盛。稀稀拉拉的人影是寂寥，不可远察的行人私语是寂寥，只因一夜错过而再不见其盛放的花儿，残落满地的时候也是寂寥的。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="随笔" scheme="https://jamiejusttang.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2020-3-8 凌晨</title>
+    <link href="https://jamiejusttang.github.io/2020/03/08/2020-3-8-%E5%87%8C%E6%99%A8/"/>
+    <id>https://jamiejusttang.github.io/2020/03/08/2020-3-8-%E5%87%8C%E6%99%A8/</id>
+    <published>2020-03-08T11:38:23.000Z</published>
+    <updated>2021-09-15T11:43:35.795Z</updated>
+    
+    <content type="html"><![CDATA[<p>   </p><p>大约是冬风残留的少年一时置气，一个平静的午夜逐渐暗淡下来。</p><p>少年在想自己的人生，现在、过去和未来。这些碎片茫茫散落在平原上，远山云流在风里凝滞。土壤下的那些根系交错缠结，被稀薄的地下蓄水润湿，土块从下自上堆叠，红棕的赤铁土块过渡向黑褐的板结。那些碎片，稳稳地扎在板结和细碎之间，散落着，茫茫。</p><p>日头正高。忽而巨大的阴影将大地吞没，翕忽游动。一千道碎片的边缘反射出它的身形，然后震颤。</p><p>       </p><p>       </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;   &lt;/p&gt;
+&lt;p&gt;大约是冬风残留的少年一时置气，一个平静的午夜逐渐暗淡下来。&lt;/p&gt;
+&lt;p&gt;少年在想自己的人生，现在、过去和未来。这些碎片茫茫散落在平原上，远山云流在风里凝滞。土壤下的那些根系交错缠结，被稀薄的地下蓄水润湿，土块从下自上堆叠，红棕的赤铁土块过渡向黑褐的板</summary>
+      
+    
+    
+    
+    
+    <category term="随笔" scheme="https://jamiejusttang.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
